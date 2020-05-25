@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts
+    script(src="/static/scripts.js")
+
+block style 
+    style
+        include ../static/style.css
+
+block content   
+    section#introSection
+        div Welcome To Dance Academy !!!!
+    section#missionSection
+        h2 Our Mission    
+        div.card 
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best dance academy for the biginners.
+        div.card 
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best dance academy for the biginners.
+        div.card 
+            h3 Early Learning
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best dance academy for the biginners.
+    section#sponserSection
+        h3 Our Sponcers
+        div#sponcers
+            img(src="/static/img/logo1.png",class="sponcerimg")
+            img(src="/static/img/logo2.png",class="sponcerimg")
+            img(src="/static/img/logo3.png",class="sponcerimg")
+            img(src="/static/img/logo4.png",class="sponcerimg")
